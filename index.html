@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Danh thiếp số - Lâm Chí Cảnh</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      transition: all 0.3s ease;
+    }
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(135deg, #e0f7fa, #ffffff);
+      color: #333;
+      overflow-x: hidden;
+    }
+    header {
+      text-align: center;
+      padding: 40px 20px 20px;
+    }
+    .avatar {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #fff;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    h1 {
+      margin: 15px 0 5px;
+      font-size: 28px;
+      font-weight: 600;
+    }
+    p.tagline {
+      margin: 0;
+      font-size: 16px;
+      color: #666;
+    }
+    .section {
+      padding: 30px 20px;
+      max-width: 700px;
+      margin: auto;
+    }
+    .section h2 {
+      font-size: 22px;
+      border-bottom: 2px solid #00bcd4;
+      display: inline-block;
+      margin-bottom: 15px;
+    }
+    .button {
+      display: inline-block;
+      margin: 10px 5px;
+      padding: 12px 24px;
+      font-size: 16px;
+      border-radius: 8px;
+      background-color: #00bcd4;
+      color: white;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      cursor: pointer;
+    }
+    .button:hover {
+      background-color: #0097a7;
+      transform: translateY(-2px);
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #aaa;
+      font-size: 14px;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-image: radial-gradient(circle at var(--x) var(--y), rgba(0,188,212,0.15) 0%, transparent 40%);
+      pointer-events: none;
+      z-index: 999;
+      transition: background-position 0.2s ease;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="avatar.jpg" alt="Avatar" class="avatar" />
+    <h1>Lâm Chí Cảnh</h1>
+    <p class="tagline">Giám đốc Ban Kinh Doanh - Prudential Việt Nam</p>
+  </header>
+
+  <div class="section">
+    <div class="card">
+      <h2>🎯 Giới thiệu</h2>
+      <p>Tôi là Lâm Chí Cảnh - Giám đốc Ban Kinh Doanh tại Prudential Việt Nam. Tôi cung cấp giải pháp bảo hiểm doanh nghiệp tối ưu về thuế, bảo vệ tài chính và nhân sự toàn diện cho doanh nghiệp hiện đại.</p>
+      <a href="mailto:canhlc-prudential@bhs.life" class="button">Liên hệ Email</a>
+      <a href="https://zalo.me/0964481477" class="button">Zalo tư vấn</a>
+    </div>
+
+    <div class="card">
+      <h2>📦 Sản phẩm nổi bật</h2>
+      <p>Giải pháp bảo hiểm đầu tư linh hoạt - <strong>PRU-Đầu Tư Linh Hoạt</strong> - kết hợp bảo vệ tài chính & sinh lời theo thị trường.</p>
+      <a href="https://www.prudential.com.vn/vi/san-pham-bao-hiem-nhan-tho/pru-dau-tu-linh-hoat/" class="button">Xem chi tiết</a>
+    </div>
+
+    <div class="card">
+      <h2>🌐 Kết nối</h2>
+      <a href="https://zalo.me/0964481477" class="button">Zalo</a>
+      <a href="mailto:canhlc-prudential@bhs.life" class="button">Email</a>
+      <a href="https://www.facebook.com/canh.lc.2024" class="button">Facebook</a>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Lâm Chí Cảnh | Prudential Việt Nam
+  </footer>
+
+  <script>
+    document.addEventListener('mousemove', e => {
+      document.body.style.setProperty('--x', e.pageX + 'px');
+      document.body.style.setProperty('--y', e.pageY + 'px');
+    });
+  </script>
+</body>
+</html>
